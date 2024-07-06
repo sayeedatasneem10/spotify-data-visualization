@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.js"></script>
+    <title>Spotify data Visualization</title>
+</head>
+<body>
+    <div class="container">
+        <h1><i class="fa-brands fa-spotify"></i> SPOTIFY DASHBOARD</h1>
+        <P>Spotify music data from 2023 </P>
+        <div class="form-container">
+            <form class="flex" id="submit">
+                <input type="text" id="search" placeholder="Filter according to albums,Enter 'album'">
+                <button class="search-btn" type="submit">
+                    <i class="fas fa-search"></i>
+                </button>
+            </form>
+        </div>
+
+            <div id=canvasContainer class="canvasContainer">
+            <canvas id="myChart" class="canvas1"></canvas>
+            <br>
+            <br>
+            <canvas id="myChart2" class="canvas2"></canvas>
+            <br>
+            <br>
+            <canvas id="myChart3" class="canvas3"></canvas>
+            </div>
+            
+
+
+    </div>
+    
+   
+    <script src="script.js"></script>
+</body>
+</html>
